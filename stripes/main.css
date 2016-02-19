@@ -1,0 +1,77 @@
+.stripe-45deg{
+	background: repeating-linear-gradient(
+			45deg,
+			#606dbc,
+			  #606dbc 30px,
+			  #465298 30px,
+			  #465298 60px
+		);
+
+	color: white;
+	padding: 10px;
+}
+
+.stripe-minus-45deg{
+	background: repeating-linear-gradient(
+			-45deg,
+			#606dbc,
+			  #606dbc 30px,
+			  #465298 30px,
+			  #465298 60px
+		);
+
+	color: white;
+	padding: 10px;
+}
+
+.stripe-20deg{
+	background: repeating-linear-gradient(
+			20deg,
+			#b8db29,
+			  #b8db29 30px,
+			  #5a8f00 30px,
+			  #5a8f00 60px
+		);
+
+	color: white;
+	padding: 10px;
+}
+
+.stripe-0deg{
+	background: repeating-linear-gradient(
+			0deg,
+			#f3961c,
+			  #f3961c 20px,
+			  #f9d835 20px,
+			  #f9d835 40px
+		);
+
+	color: white;
+	padding: 10px;
+}
+
+.stripe-70deg{
+	background: repeating-linear-gradient(
+			70deg,
+			#f04349,
+			  #f04349 30px,
+			  #c81e2b 30px,
+			  #c81e2b 60px
+		);
+
+	color: white;
+	padding: 10px;
+}
+
+.stripe-90deg{
+			background: repeating-radial-gradient(
+		    circle,
+		    purple,
+		    purple 10px,
+		    #4b026f 10px, 
+		    #4b026f 20px
+		  );
+
+	color: white;
+	padding: 10px;
+}

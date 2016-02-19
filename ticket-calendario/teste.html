@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ticket Versão 1</title>
+		<style type="text/css">
+			.ticket-dourado {
+				background: #FCF0AD;
+				
+				font-family: Arial;
+				font-size: 28px;
+				font-weight: bold;
+				color: #E5A904;
+				position: relative !important;
+				
+				float: left;
+				padding: 3px 10px 5px 5px;
+				margin: 0 5px 5px 0;
+				
+				/* Cantos arredondados */
+				border-radius: 0 120px 120px 0;
+				-moz-border-radius: 0 152px 152px 0;
+				-webkit-border-radius: 0 152px 152px 0;
+				
+				border-style: solid;
+				border-color: #E5A904;
+				border-width: 2px;
+				
+			}
+
+			.ticket-dourado-img{
+				float: left;
+				
+				background: #FCF0AD;
+				
+				/*background-image: url('calendario-branco.png');
+				background-repeat: no-repeat;
+				
+				*/
+				
+				padding-left: 4px;
+				padding-right: 4px;
+				padding-top: 5px;
+				padding-bottom: 0;
+
+				border-style: solid;
+				border-color: #E5A904;
+				border-width: 2px;
+				border-right-width: 0;
+				
+				/* Sombreamento */
+				/* -webkit-box-shadow: 10px 10px 8px -2px rgba(0,0,0,0.75);
+				-moz-box-shadow: 10px 10px 8px -2px rgba(0,0,0,0.75);
+				box-shadow: 5px 5px 8px -2px rgba(0,0,0,0.75);*/
+				
+			}
+			
+			.ticket-branco {
+				background: #FFBF00;
+				
+				font-family: Arial;
+				font-size: 28px;
+				font-weight: bold;
+				color: #fff;
+				position: relative !important;
+				
+				float: left;
+				padding: 3px 10px 5px 5px;
+				margin: 0 5px 5px 0;
+				
+				/* Cantos arredondados */
+				border-radius: 0 120px 120px 0;
+				-moz-border-radius: 0 152px 152px 0;
+				-webkit-border-radius: 0 152px 152px 0;
+				
+				border-style: solid;
+				border-color: #E5A904;
+				border-width: 2px;
+				
+			}
+
+			.ticket-branco-img{
+				float: left;
+				
+				background: #FFBF00;
+				
+				/*background-image: url('calendario-branco.png');
+				background-repeat: no-repeat;
+				
+				*/
+				
+				padding-left: 4px;
+				padding-right: 4px;
+				padding-top: 5px;
+				padding-bottom: 0;
+
+				border-style: solid;
+				border-color: #E5A904;
+				border-width: 2px;
+				border-right-width: 0;
+				
+				/* Sombreamento */
+				/* -webkit-box-shadow: 10px 10px 8px -2px rgba(0,0,0,0.75);
+				-moz-box-shadow: 10px 10px 8px -2px rgba(0,0,0,0.75);
+				box-shadow: 5px 5px 8px -2px rgba(0,0,0,0.75);*/
+				
+			}
+			
+			.ticket-preto {
+				background: #FFBF00;
+				
+				font-family: Arial;
+				font-size: 28px;
+				font-weight: bold;
+				color: #333333;
+				position: relative !important;
+				
+				float: left;
+				padding: 3px 10px 5px 5px;
+				margin: 0 5px 5px 0;
+				
+				/* Cantos arredondados */
+				border-radius: 0 120px 120px 0;
+				-moz-border-radius: 0 152px 152px 0;
+				-webkit-border-radius: 0 152px 152px 0;
+				
+				border-style: solid;
+				border-color: #333333;
+				border-width: 1px;
+			}
+
+			.ticket-preto-img{
+				float: left;
+				
+				background: #FFBF00;
+				
+				/*background-image: url('calendario-branco.png');
+				background-repeat: no-repeat;
+				
+				*/
+				
+				padding-left: 4px;
+				padding-right: 4px;
+				padding-top: 5px;
+				padding-bottom: 0;
+
+				border-style: solid;
+				border-color: #333333;
+				border-width: 1px;
+				border-right-width: 0;
+				
+				/* Sombreamento */
+				/* -webkit-box-shadow: 10px 10px 8px -2px rgba(0,0,0,0.75);
+				-moz-box-shadow: 10px 10px 8px -2px rgba(0,0,0,0.75);
+				box-shadow: 5px 5px 8px -2px rgba(0,0,0,0.75);*/
+				
+			}
+			
+			.ticket-azul {
+				background: #fff;
+				
+				font-family: Arial;
+				font-size: 28px;
+				font-weight: bold;
+				color: #0088CC;
+				position: relative !important;
+				
+				float: left;
+				padding: 3px 10px 5px 5px;
+				margin: 0 5px 5px 0;
+				
+				/* Cantos arredondados */
+				border-radius: 0 120px 120px 0;
+				-moz-border-radius: 0 152px 152px 0;
+				-webkit-border-radius: 0 152px 152px 0;
+				
+				border-style: solid;
+				border-color: #0088CC;
+				border-width: 2px;
+			}
+
+			.ticket-azul-img{
+				float: left;
+				
+				background: #fff;
+				
+				/*background-image: url('calendario-branco.png');
+				background-repeat: no-repeat;
+				
+				*/
+				
+				padding-left: 4px;
+				padding-right: 4px;
+				padding-top: 5px;
+				padding-bottom: 0;
+
+				border-style: solid;
+				border-color: #0088CC;
+				border-width: 2px;
+				border-right-width: 0;
+				
+				/* Sombreamento */
+				/* -webkit-box-shadow: 10px 10px 8px -2px rgba(0,0,0,0.75);
+				-moz-box-shadow: 10px 10px 8px -2px rgba(0,0,0,0.75);
+				box-shadow: 5px 5px 8px -2px rgba(0,0,0,0.75);*/
+				
+			}
+			
+			.ticket-cinza {
+				background: #fff;
+				
+				font-family: Arial;
+				font-size: 28px;
+				font-weight: bold;
+				color: #0088CC;
+				position: relative !important;
+				
+				float: left;
+				padding: 3px 10px 5px 5px;
+				margin: 0 5px 5px 0;
+				
+				/* Cantos arredondados */
+				border-radius: 0 120px 120px 0;
+				-moz-border-radius: 0 152px 152px 0;
+				-webkit-border-radius: 0 152px 152px 0;
+				
+				border-style: solid;
+				border-color: #ddd;
+				border-width: 2px;
+				
+				
+			}
+
+			.ticket-cinza-img{
+				float: left;
+				
+				background: #fff;
+				
+				/*background-image: url('calendario-branco.png');
+				background-repeat: no-repeat;
+				
+				*/
+				
+				padding-left: 4px;
+				padding-right: 4px;
+				padding-top: 5px;
+				padding-bottom: 0;
+
+				border-style: solid;
+				border-color: #ddd;
+				border-width: 2px;
+				border-right-width: 0;
+				
+				/* Sombreamento */
+				/* -webkit-box-shadow: 10px 10px 8px -2px rgba(0,0,0,0.75);
+				-moz-box-shadow: 10px 10px 8px -2px rgba(0,0,0,0.75);
+				box-shadow: 5px 5px 8px -2px rgba(0,0,0,0.75);*/
+				
+			}
+			
+			.div-branco span{
+				background-color: #fff !important;
+				/* Sombreamento */
+				-webkit-box-shadow: 10px 10px 8px -2px rgba(0,0,0,0.75);
+				-moz-box-shadow: 10px 10px 8px -2px rgba(0,0,0,0.75);
+				box-shadow: 5px 5px 8px -2px rgba(0,0,0,0.75);
+			}
+		</style>
+	</head>
+	<body>
+		<h2>Exemplos Ticket</h2>
+		<div class="">
+			<span class="ticket-dourado-img"><img src="calendario-dourado.png" /></span>
+			<span class="ticket-dourado">30/09/2013</span>
+		</div>
+		
+		<div class="">
+			<span class="ticket-branco-img"><img src="calendario-branco.png" /></span>
+			<span class="ticket-branco">30/09/2013</span>
+		</div>
+
+		<div class="div-branco">
+			<span class="ticket-preto-img"><img src="calendario-preto.png" /></span>
+			<span class="ticket-preto">30/09/2013</span>
+		</div>
+		
+		<div>
+			<span class="ticket-preto-img"><img src="calendario-preto.png" /></span>
+			<span class="ticket-preto">30/09/2013</span>
+		</div>
+		
+		<div>
+			<span class="ticket-azul-img"><img src="calendario-azul.png" /></span>
+			<span class="ticket-azul">30/09/2013</span>
+		</div>
+		
+		<div class="div-branco">
+			<span class="ticket-cinza-img"><img src="calendario-azul.png" /></span>
+			<span class="ticket-cinza">30/09/2013</span>
+		</div>
+	</body>
+</html>
