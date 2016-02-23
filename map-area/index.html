@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Teste Area</title>
+		<style type="text/css">
+			body{
+				background: rgb(255, 255, 255);
+			}
+			
+			.mapa_centro{
+				text-align:center; 
+				width:768px; 
+				margin-left:auto; 
+				margin-right:auto;
+			}
+			
+			.oculto{
+				display:none;
+			}
+			
+			.teste{
+				background-color: rgb(129,149,144);
+				visibility:visible;
+			}
+			
+			.areaVerde{
+				background-color: green;
+				visibility: visible;
+			}
+			
+			.letra_grande{
+				font: 30px Arial;
+			}
+			.ui-legenda {
+				position: absolute;
+				-- configura de acordo com o conteúdo
+				--width: 100px;
+				--height: 80px;
+				background: white;
+				display: none;
+				border: solid 3px orange;
+				border-radius: 5px;
+				font: 30px bold Times New Roman;
+			}
+		</style>
+		
+		
+	</head>
+	<body>
+		<div class="mapa_centro">
+			<div class="ui-legenda" id="legenda">
+				
+			</div>
+				
+			<img id="img" src="logo.png" usemap="#map_img"/>
+			<map id="map_img">
+				<area   id="cima"
+							name="Harley-Davidson"
+							class="areaVerde"
+							shape="rect" 
+							coords="71,104,378,190" 
+							alt="" 
+							title=""    
+							onMouseOver="javascript:exibeLegenda();"
+							onMouseMove="javascript:legendaMouse(event);"
+							onMouseOut="javascript:escondeLegenda();"
+				/>
+				<area  	id="baixo"
+							name="Motor"
+							shape="poly" 
+							coords="138,106,136,101,131,97,123,95,124,65,141,65,156,62,167,57,184,53,193,48,203,42,215,37,225,31,237,40,250,45,265,51,281,58,298,61,314,63,326,65,326,95,321,95,315,102,294,106,267,106,190,107,169,107," 
+							onMouseOver="javascript:exibeLegenda();"
+							onMouseMove="javascript:legendaMouse(event);"
+							onMouseOut="javascript:escondeLegenda();"
+							alt="" 
+							title=""   
+				/>
+			</map>
+			<p>
+				<span class="letra_grande" id="mouseX"></span>
+				<span class="letra_grande" id="mouseY"></span>
+			</p>
+		</div>
+		
+		<!--
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		-->
+		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+		<script type="text/javascript">
+			$("document").ready(function(event){
+				
+			});
+			
+			var legendaMouse = function(event){
+				console.log("legendaMouse");
+				//console.log($("#" + event.target.id).attr("name"));
+				
+				$("#legenda").html($("#" + event.target.id).attr("name") );
+				
+				$("#mouseX").html("<b>Eixo X: " + event.pageX + "</b>");
+				$("#mouseY").html("<b>Eixo Y:" + event.pageY + "</b>");
+				// jqueryUi position method
+				$( "#legenda" ).position({
+					my: "left+3 bottom-3",
+					of: event
+				});
+			}
+			
+			var escondeLegenda = function() {
+				console.log("escondeLegenda");
+				$("#legenda").hide();
+			}
+			
+			var exibeLegenda = function() {
+				console.log("exibeLegenda");
+				$("#legenda").show();
+			}
+		</script>
+	</body>
+</html>
