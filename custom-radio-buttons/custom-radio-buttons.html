@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Custom Radio Button</title>
+		<style rel="stylesheet">
+			.custom-radio{
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+			
+			.custom-radio:after{
+				content: "";
+				clear: both;
+			}
+			
+			.custom-radios {
+				border: 1px solid #ccc;
+				box-sizing: border-box;
+				float: left;
+				height: 70px;
+				position: relative;
+				width: 120px;
+			}
+			
+			.custom-radios + .custom-radios {
+				margin-left: 25px;
+			}
+			
+			.custom-radios label{
+				background: #fff no-repeat center center;
+				bottom: 1px;
+				cursor: pointer;
+				display: block;
+				font-size: 0;
+				left: 1px;
+				position: absolute;
+				right: 1px;
+				text-indent: 100%;
+				top: 1px;
+				white-space: nowrap;
+			}
+			
+			.girafa label{
+				background-image: url(girafa-48.png);
+			}
+			
+			.baleia label {
+				background-image: url(baleia-48.png);
+			}
+			
+			.lobo label {
+				background-image: url(lobo-48.png);
+			}
+			
+			.custom-radio input:focus + label {
+				outline: 2px dotted #21b4d0;
+			}
+			
+			.custom-radio input:checked + label {
+				outline: 4px solid #21b4d0;
+			}
+			
+			.custom-radio input:checked + label:after {
+				background:url(ok.png);
+				bottom: -10px;
+				content: "";
+				display: inline-block;
+				height: 20px;
+				position: absolute;
+				right: -10px;
+				width: 20px;
+			}
+			
+			@-moz-document url-prefix() {
+				.custom-radio input:checked + label:after {
+					bottom: 0;
+					right: 0;
+					background-color: #21b4d0;
+				}
+			}
+		</style>
+	</head>
+	
+	<body>
+		<h2>Selecione um avatar</h2>
+		<p>
+			<ul class="custom-radio">
+				<li class="custom-radios girafa">
+					<input name="payment_methods" type="radio" id="girafa">
+					<label for="girafa">Girafa</label> 
+				</li>
+				
+				<li class="custom-radios baleia">
+					<input name="payment_methods" type="radio" id="baleia" />
+					<label for="baleia">Baleia</label>
+				</li>
+				
+				<li class="custom-radios lobo">
+					<input name="payment_methods" type="radio" id="lobo">
+					<label for="lobo">Lobo</label>
+				</li>
+			</ul>
+		</p>
+		
+		
+	</body>
+</html>
