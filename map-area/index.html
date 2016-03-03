@@ -2,7 +2,7 @@
 <html lang="pt-br">
 	<head>
 		<meta charset="UTF-8">
-		<title>Teste Area</title>
+		<title>Map Area</title>
 		<style type="text/css">
 			body{
 				background: rgb(255, 255, 255);
@@ -14,16 +14,7 @@
 				margin-left:auto; 
 				margin-right:auto;
 			}
-			
-			.oculto{
-				display:none;
-			}
-			
-			.teste{
-				background-color: rgb(129,149,144);
-				visibility:visible;
-			}
-			
+
 			.areaVerde{
 				background-color: green;
 				visibility: visible;
@@ -32,16 +23,18 @@
 			.letra_grande{
 				font: 30px Arial;
 			}
+			
 			.ui-legenda {
 				position: absolute;
-				-- configura de acordo com o conteúdo
-				--width: 100px;
-				--height: 80px;
 				background: white;
 				display: none;
-				border: solid 3px orange;
-				border-radius: 5px;
+				border: 2px solid;
 				font: 30px bold Times New Roman;
+				padding: 5px;
+
+				-webkit-box-shadow: 10px 10px 8px -2px rgba(0,130,199,0.35);
+                -moz-box-shadow: 10px 10px 8px -2px rgba(0,130,199,0.35);
+                box-shadow: 5px 5px 8px -2px rgba(0,130,199,0.35);
 			}
 		</style>
 		
@@ -69,7 +62,7 @@
 				<area  	id="baixo"
 							name="Motor"
 							shape="poly" 
-							coords="138,106,136,101,131,97,123,95,124,65,141,65,156,62,167,57,184,53,193,48,203,42,215,37,225,31,237,40,250,45,265,51,281,58,298,61,314,63,326,65,326,95,321,95,315,102,294,106,267,106,190,107,169,107," 
+							coords="138,106,136,101,131,97,123,95,124,65,141,65,156,62,167,57,184,53,193,48,203,42,215,37,225,31,237,40,250,45,265,51,281,58,298,61,314,63,326,65,326,95,321,95,315,102,294,106,267,106,190,107,169,107" 
 							onMouseOver="javascript:exibeLegenda();"
 							onMouseMove="javascript:legendaMouse(event);"
 							onMouseOut="javascript:escondeLegenda();"
